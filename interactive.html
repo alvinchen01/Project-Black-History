@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Interactive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="challenge.html">Challenge</a>
+<a href="impact.html">Impact</a>
+<a href="community.html">Community</a>
+<a href="modern.html">Modern</a>
+<a href="interactive.html">Interactive</a>
+</nav>
+
+<header>
+<h1 id="secretTitle" style="cursor:pointer;">Interactive</h1>
+<p>Click the title for a surprise.</p>
+</header>
+
+<section>
+<h2>Reflection</h2>
+<button onclick="showMessage()">Reveal Message</button>
+
+<div id="hiddenText" style="display:none; margin-top:15px; font-weight:bold; color:darkred;">
+Resilience is often quiet, but it is powerful.
+</div>
+</section>
+
+<script>
+function showMessage() {
+document.getElementById("hiddenText").style.display = "block";
+}
+
+document.getElementById("secretTitle").onclick = function() {
+window.location.href = "secret.html";
+};
+</script>
+
+</body>
+</html>
